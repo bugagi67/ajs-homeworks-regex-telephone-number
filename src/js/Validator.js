@@ -1,6 +1,5 @@
 export default class Validator {
-  validateTelephoneNumber(number) {
-    this.number = number;
+  static validateTelephoneNumber(number) {
 
     const validateNumber = number.split(/[^\d]+/g).join('');
     return `+${

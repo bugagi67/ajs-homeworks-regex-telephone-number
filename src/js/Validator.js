@@ -1,6 +1,5 @@
 export default class Validator {
   static validateTelephoneNumber(number) {
-
     const validateNumber = number.split(/[^\d]+/g).join('');
     return `+${
       validateNumber.length === 11
